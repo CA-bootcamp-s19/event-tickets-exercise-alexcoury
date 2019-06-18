@@ -50,6 +50,10 @@ contract EventTicketsV2 {
         _;
     }
 
+    constructor() public {
+        owner = msg.sender;
+    }
+
     /*
         Define a function called addEvent().
         This function takes 3 parameters, an event description, a URL, and a number of tickets.
